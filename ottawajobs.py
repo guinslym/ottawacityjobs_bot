@@ -26,7 +26,6 @@ def post_tweets(results, language="en"):
         job_position = ( greeting +job['POSITION']) if (len( greeting +job['POSITION']) < 117) else job['POSITION'][0:115]
         line = job_position + " " + job['JOBURL'] 
         api.update_status(status=line)
-        #print(line)
         sleep(600)#every 10 minutes
         """
         try:
