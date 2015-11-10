@@ -30,9 +30,9 @@ def post_tweets(results, language="en"):
         sleep(600)#every 10 minutes
         """
         try:
-                        api.update_status(status=line)
+            api.update_status(status=line)
         except:
-                        print('Did I send the tweet?')
+            print('Did I send the tweet?')
         pass
         """
 
